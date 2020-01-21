@@ -57,15 +57,15 @@ end
 def run(songs)
   while true do
     puts "Please enter a command:"
-    response = gets.chomp
-    if "exit"
+    input = gets.chomp
+    if input == "exit"
       exit_jukebox
       break
-    elsif "play"
+    elsif input == "play"
       play(songs)
-    elsif "help"
+    elsif input == "help"
       help
-    elsif "list"
+    elsif input == "list"
       list(songs)
     elsif
       puts "Invalid entry"

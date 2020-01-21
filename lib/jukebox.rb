@@ -67,7 +67,7 @@ def run(songs)
       help
     elsif input == "list"
       list(songs)
-    elsif
+    else
       puts "Invalid entry"
     end
   end

@@ -61,13 +61,13 @@ def run(songs)
     if "exit"
       exit_jukebox
       break
-    if "play"
+    elsif "play"
       play(songs)
-    if "help"
+    elsif "help"
       help
-    if "list"
+    elsif "list"
       list(songs)
-    if
+    elsif
       puts "Invalid entry"
     end
   end

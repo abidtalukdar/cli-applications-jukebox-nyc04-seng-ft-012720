@@ -58,17 +58,16 @@ def run(songs)
   while true do
     puts "Please enter a command:"
     response = gets.chomp
-    case response
-    when "exit"
+    if "exit"
       exit_jukebox
       break
-    when "play"
+    if "play"
       play(songs)
-    when "help"
+    if "help"
       help
-    when "list"
+    if "list"
       list(songs)
-    else
+    if
       puts "Invalid entry"
     end
   end
